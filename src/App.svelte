@@ -10,4 +10,4 @@
 </style>
 
 <h1>Hello {name}!</h1>
-<Expandable text="Some text that can be hidden or shown" visible=true/>
+<Expandable input="Some text that can be hidden or shown" visible=true/>
