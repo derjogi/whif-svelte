@@ -1,4 +1,5 @@
 <script>
+    import Expandable from './Expandable.svelte';
 	export let name;
 </script>
 
@@ -9,3 +10,4 @@
 </style>
 
 <h1>Hello {name}!</h1>
+<Expandable text="Some text that can be hidden or shown" visible=true/>

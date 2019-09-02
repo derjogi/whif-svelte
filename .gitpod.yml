@@ -3,5 +3,8 @@ vscode:
     - JamesBirtles.svelte-vscode@0.4.0:aicIqbjKmEBw3n8OhIUmwA==
 
 tasks:
-  - command: npm install
-  - command: npm run build
+  - init: >
+      touch /tmp/.npm-lock &&
+      npm install &&
+      rm /tmp/.npm-lock
+    command: npm run build
