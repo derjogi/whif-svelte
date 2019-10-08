@@ -1,19 +1,22 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+## About
 
----
+This app is going to be a simple MVP for asking questions and finding the best suitable answer.
+A wee bit similar to a forum or SO or reddit, but with a focus on a 'summary' field, that contains an aggregate
+of all the opinions of the individual posts. (Well, at least of those posters that care to integrate their opinion into the summary.
 
-# svelte app
+## Road map
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+I'm still at the very beginning / ground zero, so I'll use this as kind of my issue-tracker until I have something at least half-way working
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+TODO:
+* Firebase Integration
+* Possibility to create a new 'topic'
+* In the 'Topic':
+** Field to ask a question
+** Answers
+** Summary field (at the top?) that's editable by people
+*** Summary field: should store who wrote what on a per-sentence basis, and add links to each sentence that offers to jump to the post that is associtated with it (can be multiple) to see more details
+*** History should be kept so that modifications can be undone by moderators and editing conflicts can be resolved.
 
 
 ## Get started
@@ -21,7 +24,6 @@ cd svelte-app
 Install the dependencies...
 
 ```bash
-cd svelte-app
 npm install
 ```
 
