@@ -1,5 +1,4 @@
 import App from './App.svelte';
-import './global.scss';
 import './gradient.js';
 
 const app = new App({

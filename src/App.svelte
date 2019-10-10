@@ -1,8 +1,5 @@
 <script>
-    import Expandable from './Expandable.svelte';
 	export let name;
-    let innerExpandable = `<Expandable input="Something else" visible=true/>`
-
 </script>
 
 <style>
@@ -11,15 +8,31 @@
 		text-align: center;
 	}
 
-	.gradient {
-		height: 100%;
-		width: 100%;
+	.card:hover {
+		box-shadow: 5px 5px 15px #d97a2cc9;
+		background: #fff8efde;
 	}
 
+	.card {
+		background: #ffffff;
+		box-shadow: 2px 2px 8px #6e7d84ad;
+		border-radius: 10px;
+		margin: 20px 20px 20px 10px;
+		padding: 10px 10px 10px 20px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+
+	.card.link {
+		position:absolute;
+		width:100%;
+		height:100%;
+		top:0;
+		left: 0;
+		z-index: 1;
+	}
 </style>
 <div class="gradient">
     <h1>Hello {name}!</h1>
 </div>
-This is some normal text. It's going to talk about how to save the world.
-<Expandable input="Yes I know, maybe a bit hypocritical. But well, I think it will work." visible=true/>
-    So, what about this? Is it going to be good? What's it say? <Expandable input="Keep it cool. It's going to be interesting! {innerExpandable}" visible=false/>
+<div class="card new-topic"><a href="App.svelte"><span class="link">How 'bout you create a <b>new topic?</b></span></a></div>
+<div class="card browse">Or would you rather <b>browse</b> a bit?</div>
